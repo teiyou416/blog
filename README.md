@@ -11,7 +11,8 @@ dai1
 |\_\_\_**src
 | |\_\_..js
 |
-This is a sample for student who pick the lecture:システム開発実習
+This is a sample for student who pick the lecture:
+システム開発実習
 !!!ただ参考になるから!!!
 
 ## Available Scripts
