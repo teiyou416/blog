@@ -2,9 +2,8 @@ html {
   height: 100%;
   background-color: #fff;
 }
-
 .LogoBox,
-.SideBar,
+.sideBar,
 .Header {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -13,46 +12,23 @@ html {
   -ms-user-select: none;
   user-select: none;
 }
+.LogoBox{
+ positions: absolute;
+ top:0;left:0;
+ height:100px;width:140px;
+}
+.Logo{
+ position:relative;
+ margin 18px 18px;
+ width:130px;height:120px;
+ border-radius:20px;20px;80px;80px;
+}
 
-/* --- Header --- */
-.LogoBox {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 140px;
-  width: 140px;
-}
-.Logo {
-  position: relative;
-  margin: 12px 18px;
-  width: 110px;
-  height: 104px;
-  background-color: #ff4044;
-  border-radius: 20px 20px 80px 80px;
-  display: inline-block;
-  cursor: pointer;
-}
-.Logo:before,
-.Logo:after {
-  position: absolute;
-  margin-top: 44px;
-  content: "";
-  left: 56px;
-  top: 0;
-  width: 50px;
-  height: 70px;
-  background: #ff4044;
-  border-radius: 50px 50px 8px 8px;
-  -webkit-transform: rotate(-54deg);
-  -moz-transform: rotate(-54deg);
-  -ms-transform: rotate(-54deg);
-  -o-transform: rotate(-54deg);
-  transform: rotate(-58deg);
-  -webkit-transform-origin: 0 100%;
-  -moz-transform-origin: 0 100%;
-  -ms-transform-origin: 0 100%;
-  -o-transform-origin: 0 100%;
-  transform-origin: 0 100%;
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* --- Header --- */
 .Header {
@@ -74,17 +50,21 @@ html {
 }
 
 /* --- SIDEBAR --- */
-.SideBar {
-  position: absolute;
+.sideBar {
   top: 0;
   bottom: 0;
   left: 0;
   width: 150px;
-  padding-top: 150px;
-  background-color: #383636;
+  transition: 0.5s;
+  padding-top: 50px;
+  background-color: #fff;
+  transition:.7s;
+  &.is-closed {
+    transform: translates(-150px);
+  }
 }
 .Nav {
-  color: #fff;
+  color: black;
   font:
     22px "Jura",
     sans-serif;
@@ -115,31 +95,223 @@ p {
   margin: 0 0 24px;
   color: #222;
 }
-/* --- FOOTER --- */
-.Footer {
-  position: absolute;
-  bottom: 0;
-  left: 150px;
-  right: 0;
-  height: 40px;
-  text-align: center;
-  background-color: #001ce4;
+.sidebar-toggle {
+  position: fixed;
+  z-index: 1;
+  border: 4px solid $white;
+  outline: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 1em;
+  background-color: $color__toggle;
+  transform: rotate(45deg);
+  cursor: pointer;
+  transition: .5s;
+  
+  &.is-closed {
+    transform: translateX(.3em) rotate(0deg);  
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: $white;
+  }
 }
 
+
 /* --- BUTTONS --- */
-.btn {
-  background-color: #fff;
-  color: #ccc;
-  font:
-    600 16px "Jura",
-    sans-serif;
-  border-radius: 1px;
-  text-align: center;
-  height: 30px;
-  line-height: 30px;
-  width: 120px;
+.text-box{
+        margin-left: 44vw;
+        margin-top :62px ; 
+    }
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
 }
+
 .btn:hover {
-  color: #ff4044;
-  cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #red;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* text-box */
+   a{
+  display:block;
+  color:#ad5482;  
+  text-decoration:none;
+  font-weight:bold;
+  margin-top:40px;
+  text-align:center;
+}
+
+#bg{
+  position:relative;
+  top:20px;
+  height:600px;
+  width:800px;
+  background:url('https://i.imgur.com/3eP9Z4O.png') center no-repeat;
+  background-size:cover;
+  margin-left:auto;
+  margin-right:auto; 
+  border:#fff 15px solid;
+}
+
+.module{
+  position:relative;
+  top:15%;    
+  height:70%;
+  width:450px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:5px;
+  background:RGBA(255,255,255,1);
+    
+  -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);        
+  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);
+  
+}
+
+.module ul{
+  list-style-type:none;
+  margin:0;
+}
+
+.tab{
+  float:left;
+  height:60px;
+  width:25%;
+  padding-top:20px;
+  box-sizing:border-box;
+  background:#eeeeee;  
+  text-align:center;
+  cursor:pointer;
+  transition:background .4s;
+}
+
+.tab:first-child{  
+  -webkit-border-radius: 5px 0px 0px 0px;
+  border-radius: 5px 0px 0px 0px;
+}
+
+.tab:last-child{  
+  -webkit-border-radius: 0px 5px 0px 0px;
+  border-radius: 0px 5px 0px 0px;
+}
+
+.tab:hover{  
+  background-color:rgba(0,0,0,.1);
+}
+
+.activeTab{
+  background:#fff;
+}
+
+.activeTab .icon{
+  opacity:1;
+}
+
+.icon{
+  height:24px;
+  width:24px;
+  opacity:.2;
+}
+
+.form{
+  float:left;
+  height:86%;
+  width:100%;
+  box-sizing:border-box;
+  padding:40px;
+}
+
+.textbox{
+  height:50px;
+  width:100%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  padding:10px;
+  margin-bottom:30px;
+}
+
+.textbox:focus{
+  outline:none;
+   border:rgba(24,149,215,1) 2px solid;
+   color:rgba(24,149,215,1);
+}
+
+.button{
+  height:50px;
+  width:100%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 0px solid;
+  box-sizing:border-box;
+  padding:10px;
+  margin-bottom:30px;
+  background:#90c843;
+  color:#FFF;
+  font-weight:bold;
+  font-size: 12pt;
+  transition:background .4s;
+  cursor:pointer;
+}
+
+.button:hover{
+  background:#80b438;
+  
+} 
