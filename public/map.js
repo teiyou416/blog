@@ -1,7 +1,21 @@
-var MyLatLng = new google.maps.LatLng(39.915556, 116.390833);
-var Options = {
-  zoom: 15,
-  center: MyLatLng,
-  mapTypeId: "roadmap",
-};
-var map = new google.maps.Map(document.getElementById("map"), Options);
+async function initMap() {
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+  const map = new Map(document.getElementById("map"), {
+    center: { lat: 39.91, lng: 116.39 },
+    zoom: 14,
+    mapId: "roadmap",
+  });
+  const priceTag = document.createElement("div");
+
+  priceTag.className = "price-tag";
+  priceTag.textContent = "Great Palace";
+
+  const marker = new AdvancedMarkerElement({
+    map,
+    position: { lat: 39.91, lng: 116.39 },
+    content: priceTag,
+  });
+}
+
+initMap();
