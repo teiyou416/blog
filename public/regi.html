@@ -27,9 +27,37 @@
           <input type="text" placeholder="First Name" class="textbox" />
           <input type="text" placeholder="Last Name" class="textbox" />
           <input type="text" placeholder="Email Address" class="textbox" />
-          <input type="button" value="Next" class="button" />
+          <input type="submit" value="Next" class="button" />
         </form>
       </div>
+      <div id="result"></div>
     </div>
+
+    <script>
+      document
+        .getElementById("query-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const query = document.getElementById("query").value;
+          fetch("/modify-table", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ query }),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              document.getElementById("result").textContent = JSON.stringify(
+                data,
+                null,
+                2,
+              );
+            })
+            .catch((error) => {
+              document.getElementById("result").textContent = "Error: " + error;
+            });
+        });
+    </script>
   </body>
 </html>

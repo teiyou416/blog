@@ -1,7 +1,32 @@
-var toggleBtn = document.querySelector(".sidebar-toggle");
-var sidebar = document.querySelector(".sidebar");
+(function () {
+  $(".flex-container").waitForImages(
+    function () {
+      $(".spinner").fadeOut();
+    },
+    $.noop,
+    true,
+  );
 
-toggleBtn.addEventListener("click", function () {
-  toggleBtn.classList.toggle("is-closed");
-  sidebar.classList.toggle("is-closed");
-});
+  $(".flex-slide").each(function () {
+    $(this).hover(
+      function () {
+        $(this).find(".flex-title").css({
+          transform: "rotate(0deg)",
+          top: "10%",
+        });
+        $(this).find(".flex-about").css({
+          opacity: "1",
+        });
+      },
+      function () {
+        $(this).find(".flex-title").css({
+          transform: "rotate(90deg)",
+          top: "15%",
+        });
+        $(this).find(".flex-about").css({
+          opacity: "0",
+        });
+      },
+    );
+  });
+})();
