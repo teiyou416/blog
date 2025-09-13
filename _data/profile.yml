@@ -37,7 +37,9 @@ portrait_caption: >-
 
 education:
 - name: Kyoto University 
-  logo: /assets/images/badges/Kyoto_University.svg
+  logo: /assets/images/badges/KyotoU.jpeg
+  #logo: /assets/images/badges/Kyoto_University.svg
+  #logo: /assets/images/badges/ku_e2.jpg
   position: >- 
     graduate school of informatics <br/>
     Master. Student
