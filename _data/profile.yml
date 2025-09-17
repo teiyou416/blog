@@ -3,7 +3,7 @@ secondary_name: "Ye"
 navbar_name: "CHENG Ye"
 
 positions:
-- logo: /assets/images/badges/ku.png  # Logo is optional
+- logo: /assets/images/badges/ku.png # Logo is optional
   name: Kansai University
 - #name: Position 2 without logo
 
@@ -43,7 +43,7 @@ education:
   position: >- 
     graduate school of informatics <br/>
     Master. Student
-  date: April. 2026  - present
+  date: April. 2026  - future
 - name: Kansai University
   #logo: /assets/images/badges/ku.png
   logo : /assets/images/badges/ku_e2.jpg
@@ -55,7 +55,7 @@ experience:
    #logo: /assets/images/badges/ku_e2.jpg
    logo: /assets/images/badges/ku.png
    position: Research Intern
-   date: now? 
+   date: maybe? 
 
 awards:
 #- name: Award Name 2
