@@ -3,8 +3,9 @@ secondary_name: "Ye"
 navbar_name: "CHENG Ye"
 
 positions:
-- logo: /assets/images/badges/ku.png # Logo is optional
-  name: Kansai University
+- logo: /assets/images/badges/Chelsea_FC.svg.png # Logo is optional
+
+  name: A Chelsea FC@London Fan
 - #name: Position 2 without logo
 
 
