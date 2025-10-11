@@ -1,6 +1,6 @@
-primary_name: "CHENG"
-secondary_name: "Ye"
-navbar_name: "CHENG Ye"
+primary_name: "Ye"
+secondary_name: "CHENG"
+navbar_name: "Ye CHENG"
 
 positions:
 - logo: /assets/images/badges/Chelsea_FC.svg.png # Logo is optional
@@ -23,7 +23,7 @@ wechat_prompt: >-
 short_bio_text_justify: false
 short_bio: >- 
   <p>
-   Hi,my name is CHENG Ye(程烨，程ヨウ). I am a senior student at <a href="https://www.kansai-u.ac.jp/ja/?stt_lang=ja">Kansai University</a>,
+   Hi,my name is Ye CHENG(程烨，程ヨウ). I am a senior student at <a href="https://www.kansai-u.ac.jp/ja/?stt_lang=ja">Kansai University</a>,
      where I conduct research in the Informaion Infrastructure Lab under the supervision of <a href="https://www.kansai-u.ac.jp/ordist/staff/data/id015207.html">Assoc. Prof. ADACHI Natoshi</a>.
   I will go to <a href="https://www.kyoto-u.ac.jp">Kyoto University</a> for my master study in April 2026,
    and join the <a href="https://shudo-lab.org">Data Engineering and Platform Research Group</a>.
@@ -47,7 +47,7 @@ education:
   date: April. 2026  - future
 - name: Kansai University
   #logo: /assets/images/badges/ku.png
-  logo : /assets/images/badges/ku_e2.jpg
+  logo : /assets/images/badges/ku.png
   position: B.Eng. :Department of Civil, Environmental and Applied Systems Engineering
   date: April. 2021 - March. 2026
 
@@ -62,7 +62,7 @@ language:
    position: conversational
  - name: English
    logo: /assets/images/badges/England.png
-   position: conversational
+   position: read & listen
 
 awards:
 #- name: Award Name 2
