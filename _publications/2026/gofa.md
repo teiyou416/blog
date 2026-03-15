@@ -9,19 +9,7 @@ pub_last:       ' <span class="badge badge-pill badge-publication badge-success"
 pub_date:       "2026"
 #semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >- 
-Vertical federated learning (VFL) allows multiple organizations with disjoint feature spaces and overlapping sample identities to
-collaboratively train machine learning models while keeping local data.
-Despite its privacy-preserving design, recent studies have shown that
-VFL is vulnerable to backdoor attacks. In particular, a malicious passive
-party can inject carefully crafted trigger into its local inputs or intermediate embeddings, causing the global model to produce targeted mispredictions at inference time. Existing backdoor attack against backdoor
-attacks in VFL (e.g. BadVFL) rely on the assumptions that the malicious
-client can obtain addition knowledge about task labels, which contradicts
-the core privacy assumptions of VFL. In this paper, we propose GOFA,
-a new backdoor attack method for VFL scenarios. Gofa use the gradient feedback from the server to construct poisonsd dataset and employs
-adversarial example attack(e.g. FGSM) for masking original feature of
-the data to enhance trigger learning. We use CIFAR10 and UCIHAR
-dataset for experiments. Our experiments demonstrate the effectiveness
-of out method in various settings. 
+Vertical federated learning (VFL) enables multiple organizations with disjoint feature spaces and overlapping sample identities to collaboratively train machine learning models without sharing raw local data. Despite this privacy-preserving paradigm, VFL remains vulnerable to backdoor attacks. In particular, a malicious passive party can inject carefully crafted triggers into local inputs or intermediate embeddings, causing targeted mispredictions during inference. Existing VFL backdoor attacks (e.g., BadVFL) typically assume that the malicious client has additional knowledge of task labels, which conflicts with the core privacy assumptions of VFL. In this paper, we propose GOFA, a gradient-oriented backdoor attack for VFL. GOFA leverages server-provided gradient feedback to construct a poisoned dataset and applies adversarial-example techniques (e.g., FGSM) to mask original features and strengthen trigger learning. Experiments on CIFAR-10 and UCI-HAR demonstrate the effectiveness of our method across multiple settings.
 #cover:          /assets/images/covers/cover3.jpg
 cover:          /assets/images/covers/gofa_update.png
 authors:
