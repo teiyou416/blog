@@ -1,6 +1,6 @@
 primary_name: "CHENG"
 secondary_name: "YE"
-navbar_name: "CHENG YE's Blog"
+navbar_name: "CHENG YE"
 
 positions:
 - logo: /assets/images/badges/Chelsea_FC.svg.png # Logo is optional
@@ -45,7 +45,7 @@ education:
   position: >- 
     graduate school of informatics <br/>
     Master Student
-  date: April. 2026  - future
+  date: April. 2026  - March. 2028
 - name: Kansai University
   #logo: /assets/images/badges/ku.png
   logo : /assets/images/badges/ku.png
