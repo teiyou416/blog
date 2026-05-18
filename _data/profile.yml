@@ -20,7 +20,7 @@ wechat_prompt: >-
 linkedin: ye-cheng-158360361
 # orcid: 0000-0000-0000-0000
 
-short_bio_text_justify: false
+short_bio_text_justify: true
 short_bio: >- 
   <p>
    Hi, my name is CHENG YE(程烨，程ヨウ). I am now a first year master student at the <a href="https://www.kyoto-u.ac.jp">Kyoto University</a>, where I conduct research 
@@ -32,6 +32,9 @@ short_bio: >-
   <p>
    My research interests lie broadly in the Federated Learning and Blockchain.
    I am also interested in climbing, football, and working out.
+  </p>
+  <p class="profile-internship-highlight">
+   I am currently seeking internship opportunities in Summer 2026. Feel free to contact me.
   </p>
 #portrait_url: /assets/images/photos/mokuro_chelsea.png
 portrait_url: /assets/images/photos/cy.jpeg
