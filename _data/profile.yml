@@ -56,6 +56,13 @@ education:
   position: B.Eng. :Department of Civil, Environmental and Applied Systems Engineering
   date: April. 2021 - March. 2026
 
+experience:
+ - name: Rakuten Group, Inc.
+   logo: /assets/images/badges/rakuten.png
+   dept: Ad Product Development Department, Global Ad Division
+   position: Applications Engineer
+   date: Aug. 2026 - Oct. 2026
+
 language:
  - name: Chinese
    #logo: /assets/images/badges/ku_e2.jpg

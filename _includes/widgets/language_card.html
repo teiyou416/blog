@@ -1,56 +1,100 @@
 <div class="row mt-3">
   <div class="col">
-    <div class="card border-0 shadow-sm bg-white">
+    <div class="card border-0 shadow-sm bg-white profile-details-card">
       <div class="card-body p-4">
-        <div class="row" data-masonry='{"percentPosition": true }'>
+        <div class="profile-details-grid">
           {% if site.data.profile.education %}
-          <div class="col-md-6">
-            <div class="mx-2 my-1">
+          <section class="profile-details-section">
+            <div class="profile-details-heading">
+              <span class="profile-details-icon"><i class="fas fa-graduation-cap"></i></span>
               <h6>Education</h6>
-              <ul class="list-unstyled mb-1">
-                {% for item in site.data.profile.education %}
-                <li class="media mb-1">
-                  <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;"
-                    class="mr-1 mt-1">
-                  <div class="media-body">
-                    <div>{{ item.name }}</div>
-                    <div class="small">{{ item.dept }}</div>
-                    <div class="small d-flex">
-                      <div>{{ item.position }}</div>
-                      <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
-                    </div>
-                  </div>
-                </li>
-                {% endfor %}
-              </ul>
             </div>
-          </div>
+            <ul class="profile-details-list">
+                {% for item in site.data.profile.education %}
+              <li class="profile-details-item">
+                <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" class="profile-details-logo">
+                <div class="profile-details-content">
+                  <div class="profile-details-title-row">
+                    <div class="profile-details-title">{{ item.name }}</div>
+                    {% if item.date %}
+                    <div class="profile-details-date">{{ item.date }}</div>
+                    {% endif %}
+                  </div>
+                  {% if item.dept %}
+                  <div class="profile-details-meta">{{ item.dept }}</div>
+                  {% endif %}
+                  {% if item.position %}
+                  <div class="profile-details-position">{{ item.position }}</div>
+                  {% endif %}
+                </div>
+              </li>
+                {% endfor %}
+            </ul>
+          </section>
+          {% endif %}
+
+          {% if site.data.profile.experience %}
+          <section class="profile-details-section">
+            <div class="profile-details-heading">
+              <span class="profile-details-icon"><i class="fas fa-briefcase"></i></span>
+              <h6>Experience</h6>
+            </div>
+            <ul class="profile-details-list">
+                {% for item in site.data.profile.experience %}
+              <li class="profile-details-item">
+                <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" class="profile-details-logo">
+                <div class="profile-details-content">
+                  <div class="profile-details-title-row">
+                    <div class="profile-details-title">{{ item.name }}</div>
+                    {% if item.date %}
+                    <div class="profile-details-date">{{ item.date }}</div>
+                    {% endif %}
+                  </div>
+                  {% if item.dept %}
+                  <div class="profile-details-meta">{{ item.dept }}</div>
+                  {% endif %}
+                  {% if item.position %}
+                  <div class="profile-details-position">{{ item.position }}</div>
+                  {% endif %}
+                </div>
+              </li>
+                {% endfor %}
+            </ul>
+          </section>
           {% endif %}
 
           {% if site.data.profile.language %}
-          <div class="col-md-6">
-            <div class="mx-2 my-1">
+          <section class="profile-details-section">
+            <div class="profile-details-heading">
+              <span class="profile-details-icon"><i class="fas fa-language"></i></span>
               <h6>Language</h6>
-              <ul class="list-unstyled mb-1">
-                {% for item in site.data.profile.language%}
-                <li class="media mb-1">
-                  <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;"
-                    class="mr-1 mt-1">
-                  <div class="media-body">
-                    <div>{{ item.name }}</div>
-                    <div class="small">{{ item.dept }}</div>
-                    <div class="small d-flex">
-                      <div>{{ item.position }}</div>
-                      <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
-                    </div>
-                  </div>
-                </li>
-                {% endfor %}
-              </ul>
             </div>
-          </div>
+            <ul class="profile-details-list profile-language-list">
+                {% for item in site.data.profile.language%}
+              <li class="profile-details-item profile-language-item">
+                <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" class="profile-details-logo">
+                <div class="profile-details-content">
+                  <div class="profile-details-title-row">
+                    <div class="profile-details-title">{{ item.name }}</div>
+                    {% if item.position %}
+                    <div class="profile-details-date">{{ item.position }}</div>
+                    {% endif %}
+                  </div>
+                  {% if item.dept %}
+                  <div class="profile-details-meta">{{ item.dept }}</div>
+                  {% endif %}
+                  {% if item.date %}
+                  <div class="profile-details-position">{{ item.date }}</div>
+                  {% endif %}
+                </div>
+              </li>
+                {% endfor %}
+            </ul>
+          </section>
           {% endif %}
+        </div>
 
+        <div class="row mt-3" data-masonry='{"percentPosition": true }'>
           {% if site.data.profile.awards %}
           <div class="col-md-6">
             <div class="mx-2 my-1">
@@ -70,7 +114,6 @@
           {% endif %}
 
         </div>
-
       </div>
     </div>
   </div>
