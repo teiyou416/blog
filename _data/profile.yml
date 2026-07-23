@@ -45,8 +45,9 @@ education:
     Master Student
   date: April. 2026  - March. 2028
 - name: Kansai University
-  #logo: /assets/images/badges/ku.png
-  logo : /assets/images/badges/ku.png
+  logo: /assets/images/badges/ku.png
+  #logo : /assets/images/badges/ku.png
+  # logo : /assets/images/badges/kansaiU.jpg
   position: B.Eng. :Department of Civil, Environmental and Applied Systems Engineering
   date: April. 2021 - March. 2026
 
