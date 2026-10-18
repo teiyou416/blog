@@ -6,6 +6,10 @@ positions:
 - logo: /assets/images/badges/cfc.jpg # Logo is optional
 
   name: A CFC@LDN Fan
+  ja:
+    name: チェルシーFC のファン
+  zh:
+    name: 切尔西球迷
 - #name:  
 
 
@@ -35,6 +39,42 @@ short_bio: >-
    </p>
 portrait_url: /assets/images/photos/cy.jpeg
 
+# Translations of the fields above. Anything missing here falls back to the English value.
+ja:
+  primary_name: "程 ヨウ"
+  secondary_name: "CHENG YE"
+  navbar_name: "程 ヨウ"
+  wechat_prompt: >-
+   WeChat で追加していただく際は、<strong>お名前</strong>と<strong>ご所属</strong>（現在または過去）をお知らせください。よろしくお願いいたします！
+  short_bio: >-
+    <p>
+     はじめまして、程ヨウ（CHENG YE，程烨）と申します。現在、<a href="https://www.kyoto-u.ac.jp">京都大学</a>大学院情報学研究科の修士1年生として、
+     <a href="http://www.shudo.net/index-j.html">首藤一幸</a>教授の指導のもと、<a href="https://shudo-lab.org">首藤研究室</a>で研究を行っています。
+     <a href="https://www.kansai-u.ac.jp/ja/?stt_lang=ja">関西大学</a>にて学士（工学）を取得しました。学部時代の指導教員は
+     <a href="https://www.kansai-u.ac.jp/ordist/staff/data/id015207.html">安達直世</a>准教授です。
+    </p>
+    <p>
+     研究分野は主に連合学習（Federated Learning）、ブロックチェーン、AI セキュリティです。
+     趣味はクライミング、サッカー、筋トレです。
+    </p>
+zh:
+  primary_name: "程烨"
+  secondary_name: "CHENG YE"
+  navbar_name: "程烨"
+  wechat_prompt: >-
+   添加微信时请备注您的<strong>姓名</strong>和<strong>单位</strong>（现在或曾经），谢谢！
+  short_bio: >-
+    <p>
+     你好，我是程烨（CHENG YE）。目前是<a href="https://www.kyoto-u.ac.jp">京都大学</a>情报学研究科的一年级硕士研究生，
+     在<a href="https://shudo-lab.org">Data Engineering and Platform Research Group</a>从事研究，导师为<a href="http://www.shudo.net/index-j.html">首藤一幸</a>教授。
+     本科毕业于<a href="https://www.kansai-u.ac.jp/ja/?stt_lang=ja">关西大学</a>，获工学学士学位，本科导师为
+     <a href="https://www.kansai-u.ac.jp/ordist/staff/data/id015207.html">Adachi Naotoshi</a> 副教授。
+    </p>
+    <p>
+     我的研究兴趣主要包括联邦学习、区块链和 AI 安全。
+     业余时间喜欢攀岩、足球和健身。
+    </p>
+
 education:
 - name: Kyoto University 
   logo: /assets/images/badges/KyotoU.jpeg
@@ -44,12 +84,32 @@ education:
     graduate school of informatics <br/>
     Master Student
   date: April. 2026  - March. 2028
+  ja:
+    name: 京都大学
+    position: >-
+      大学院情報学研究科 <br/>
+      修士課程
+    date: 2026年4月 - 2028年3月
+  zh:
+    name: 京都大学
+    position: >-
+      情报学研究科 <br/>
+      硕士研究生
+    date: 2026年4月 - 2028年3月
 - name: Kansai University
   logo: /assets/images/badges/ku.png
   #logo : /assets/images/badges/ku.png
   # logo : /assets/images/badges/kansaiU.jpg
   position: B.Eng. :Department of Civil, Environmental and Applied Systems Engineering
   date: April. 2021 - March. 2026
+  ja:
+    name: 関西大学
+    position: 学士（工学）：環境都市工学部 都市システム工学科
+    date: 2021年4月 - 2026年3月
+  zh:
+    name: 关西大学
+    position: 工学学士：环境都市工学部 都市系统工学科
+    date: 2021年4月 - 2026年3月
 
 experience:
  - name: Rakuten Group, Inc.
@@ -57,19 +117,45 @@ experience:
    dept: Ad Product Development Department, Global Ad Division
    position: Applications Engineer
    date: Aug. 2026 - Oct. 2026
+   ja:
+     name: 楽天グループ株式会社
+     position: アプリケーションエンジニア
+     date: 2026年8月 - 2026年10月
+   zh:
+     name: 乐天集团
+     position: 应用工程师
+     date: 2026年8月 - 2026年10月
 
 language:
  - name: Chinese
    #logo: /assets/images/badges/ku_e2.jpg
    logo: /assets/images/badges/china.png
    position: native
+   ja:
+     name: 中国語
+     position: ネイティブ
+   zh:
+     name: 中文
+     position: 母语
    #date: maybe? 
  - name: Japanese
    logo: /assets/images/badges/japan.png
-   position: conversational
+   position: business
+   ja:
+     name: 日本語
+     position: ビジネスレベル
+   zh:
+     name: 日语
+     position: 商务水平
  - name: English
    logo: /assets/images/badges/England.png
-   position: read & listen
+   position: conversational
+   ja:
+     name: 英語
+     position: 日常会話
+   zh:
+     name: 英语
+     position: 日常会话
 
 awards:
 #- name: Award Name 2

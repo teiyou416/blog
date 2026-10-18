@@ -15,5 +15,6 @@ cover:          /assets/images/covers/gofa_update.png
 authors:
   - Ye CHENG, Adachi Naotoshi
 links:
+  IEEE Xplore: https://ieeexplore.ieee.org/document/11633203
   #Code: https://github.com/luost26/academic-homepage
 ---

@@ -1,0 +1,68 @@
+# UI strings for each supported language.
+# Pages declare `lang` in front matter (defaults to `en`) and `ref` to link translations of the same page.
+# The order here is the order shown in the language switcher.
+en:
+  label: English
+  html_lang: en
+  url_prefix: ""
+  menu: Menu
+  nav:
+    Home: Home
+    Publications: Publications
+  education: Education
+  experience: Experience
+  language: Language
+  honors_awards: Honors & Awards
+  news: News
+  selected_publications: Selected Publications
+  view_all: view all
+  all_publications: All publications
+  curriculum_vitae: Curriculum Vitae
+  close: Close
+  last_updated: "Last updated:"
+  updated_date_format: "%b %Y"
+  news_date_format: "%b %d"
+
+ja:
+  label: 日本語
+  html_lang: ja
+  url_prefix: /ja
+  menu: メニュー
+  nav:
+    Home: ホーム
+    Publications: 業績
+  education: 学歴
+  experience: 職歴
+  language: 言語
+  honors_awards: 受賞歴
+  news: お知らせ
+  selected_publications: 主な業績
+  view_all: すべて表示
+  all_publications: 業績一覧
+  curriculum_vitae: 履歴書
+  close: 閉じる
+  last_updated: "最終更新："
+  updated_date_format: "%Y年%-m月"
+  news_date_format: "%-m月%-d日"
+
+zh:
+  label: 中文
+  html_lang: zh-CN
+  url_prefix: /zh
+  menu: 菜单
+  nav:
+    Home: 主页
+    Publications: 论文
+  education: 教育经历
+  experience: 工作经历
+  language: 语言
+  honors_awards: 荣誉与奖项
+  news: 动态
+  selected_publications: 代表性论文
+  view_all: 查看全部
+  all_publications: 全部论文
+  curriculum_vitae: 个人简历
+  close: 关闭
+  last_updated: "最后更新："
+  updated_date_format: "%Y年%-m月"
+  news_date_format: "%-m月%-d日"

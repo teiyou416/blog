@@ -1,10 +1,17 @@
+{%- include i18n.html -%}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ t.html_lang }}">
 <!-- Template: https://github.com/luost26/academic-homepage -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ page.title }} - {{ site.data.profile.navbar_name }}</title>
+    <title>{{ page.title }} - {{ profile_t.navbar_name | default: site.data.profile.navbar_name }}</title>
+    {%- if page.ref %}
+    {%- assign translations = site.pages | where: "ref", page.ref %}
+    {%- for tr in translations %}
+    <link rel="alternate" hreflang="{{ site.data.i18n[tr.lang].html_lang | default: 'en' }}" href="{{ tr.url | absolute_url }}">
+    {%- endfor %}
+    {%- endif %}
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />

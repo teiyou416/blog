@@ -14,7 +14,8 @@
 </div>
 
 <script>
-striped_pathname = location.pathname.replace(/\/+$/, "");
+// Translated homepages live under a language prefix (e.g. /ja), which is not part of the baseurl.
+striped_pathname = location.pathname.replace(/\/+$/, "").replace(/{{ t.url_prefix | replace: "/", "\/" }}$/, "");
 if(striped_pathname != "{{ site.baseurl }}"){
     document.getElementById("url-debug-message").classList.remove('d-none');
 }
