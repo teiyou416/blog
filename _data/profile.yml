@@ -81,7 +81,7 @@ education:
   #logo: /assets/images/badges/Kyoto_University.svg
   #logo: /assets/images/badges/ku_e2.jpg
   position: >- 
-    graduate school of informatics <br/>
+    Graduate school of informatics <br/>
     Master Student
   date: April. 2026  - March. 2028
   ja:
@@ -100,15 +100,15 @@ education:
   logo: /assets/images/badges/ku.png
   #logo : /assets/images/badges/ku.png
   # logo : /assets/images/badges/kansaiU.jpg
-  position: B.Eng. :Department of Civil, Environmental and Applied Systems Engineering
+  position: Department of Civil, Environmental and Applied Systems Engineering
   date: April. 2021 - March. 2026
   ja:
     name: 関西大学
-    position: 学士（工学）：環境都市工学部 都市システム工学科
+    position: 環境都市工学部 都市システム工学科
     date: 2021年4月 - 2026年3月
   zh:
     name: 关西大学
-    position: 工学学士：环境都市工学部 都市系统工学科
+    position: 环境都市工学部 都市系统工学科
     date: 2021年4月 - 2026年3月
 
 experience:
