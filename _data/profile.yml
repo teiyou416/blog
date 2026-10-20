@@ -100,15 +100,21 @@ education:
   logo: /assets/images/badges/ku.png
   #logo : /assets/images/badges/ku.png
   # logo : /assets/images/badges/kansaiU.jpg
-  position: Department of Civil, Environmental and Applied Systems Engineering
+  position: >-
+    Department of Civil, Environmental and Applied Systems Engineering <br/>
+    B.Eng.
   date: April. 2021 - March. 2026
   ja:
     name: 関西大学
-    position: 環境都市工学部 都市システム工学科
+    position: >-
+      環境都市工学部 都市システム工学科 <br/>
+      工学学士
     date: 2021年4月 - 2026年3月
   zh:
     name: 关西大学
-    position: 环境都市工学部 都市系统工学科
+    position: >-
+      环境都市工学部 都市系统工学科 <br/>
+      工学学士
     date: 2021年4月 - 2026年3月
 
 experience:
