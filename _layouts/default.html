@@ -52,10 +52,11 @@
             });
         });
     </script>
+    {% if page.ref == 'home' %}
  <table width="40%" align="center" border="0" cellpadding="20"><tbody> 
-<!---		 <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=PmdeGY6PdHwUmAqw5yoxrm6K8ZDlQW0lZK0wqylgBJg&cl=ffffff&w=a"></script> --->
-<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=PmdeGY6PdHwUmAqw5yoxrm6K8ZDlQW0lZK0wqylgBJg&cl=ffffff&w=a"></script>
+<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=atmLyFfpC9dK_ry-WuEqDbreUe9dEAlbbQeGesjNdyw&cl=ffffff&w=a"></script>
  </tbody></table> 
+    {% endif %}
 
     <script src="{{ '/assets/js/common.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/bubble_visual_hash.js' | relative_url }}"></script>
